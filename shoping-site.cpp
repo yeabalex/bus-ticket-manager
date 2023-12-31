@@ -28,7 +28,7 @@ int main(){
         double balance = 0;
         char choice;
 
-       MainMenu: while (true)
+    MainMenu: while (true)
         {
         cout <<"Welcome to QuickMart\t\t\t"<<COMMON_UI_STRING;
         cout << "1. Explore todays market\n";
@@ -67,9 +67,9 @@ int main(){
                 continue;
             }
             
-     }
+         }
     ClothingSection: while (tolower(choice)=='1')
-    {
+         {
         p=clothingItemDb;
         for(int i=0; i<clothingItemSize; i++){
             for(int j=0; j<2; j++){
@@ -82,7 +82,7 @@ int main(){
             choice='1';
             goto CatagorySelectah;
             }
-    }
+         }
      
         
     BalanceRecharger: while(tolower(choice)=='3'){
@@ -94,18 +94,7 @@ int main(){
              cout << "Balance recharged successfully. Your new balance is: " << balance << " Birr\n";
              goto MainMenu;
              break;
-    }
-
-
-
-
-
-
-
-
-        
-      
-    }
-
+    }      
+}
     return 0;
 }
